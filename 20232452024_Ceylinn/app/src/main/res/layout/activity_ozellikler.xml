@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OzelliklerActivity">
+
+    <!-- Yatay Rehberler (sayfayı 3 eşit parçaya böler) -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideMid2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+    <!-- TinyHouse -->
+    <ImageView
+        android:id="@+id/imgtiny"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="TinyHouse"
+        android:src="@drawable/tiny4"
+        app:layout_constraintTop_toTopOf="@id/guideTop"
+        app:layout_constraintBottom_toTopOf="@id/guideMid"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/ettiny" />
+
+    <TextView
+        android:id="@+id/ettiny"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="TinyHouse\n2 kişilik, klima var, mutfaklı, konforlu sabit yaşam alanı."
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textStyle="italic"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="@id/imgtiny"
+        app:layout_constraintBottom_toBottomOf="@id/imgtiny"
+        app:layout_constraintStart_toEndOf="@id/imgtiny"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- MotoKaravan -->
+    <ImageView
+        android:id="@+id/imgmoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="MotoKaravan"
+        android:src="@drawable/moto7"
+        app:layout_constraintTop_toTopOf="@id/guideMid"
+        app:layout_constraintBottom_toTopOf="@id/guideMid2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etmoto" />
+
+    <TextView
+        android:id="@+id/etmoto"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="MotoKaravan\n4 kişilik, klima ve banyo var, yolculuk için ideal karavan."
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:textStyle="italic"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="@id/imgmoto"
+        app:layout_constraintBottom_toBottomOf="@id/imgmoto"
+        app:layout_constraintStart_toEndOf="@id/imgmoto"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ÇekmeKaravan -->
+    <ImageView
+        android:id="@+id/imgcekme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="ÇekmeKaravan"
+        android:src="@drawable/model2"
+        app:layout_constraintTop_toTopOf="@id/guideMid2"
+        app:layout_constraintBottom_toTopOf="@id/guideBottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etcekme" />
+
+    <TextView
+        android:id="@+id/etcekme"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="ÇekmeKaravan\n3 kişilik, kompakt yapı, kolay çekilebilir ve ekonomik tercih."
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:textStyle="italic"
+        app:layout_constraintTop_toTopOf="@id/imgcekme"
+        app:layout_constraintBottom_toBottomOf="@id/imgcekme"
+        app:layout_constraintStart_toEndOf="@id/imgcekme"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

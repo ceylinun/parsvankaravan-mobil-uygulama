@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="Anasayfa" android:icon="@android:drawable/ic_menu_view"/>
+    <item android:id="@+id/nav_features" android:title="Özellikler" android:icon="@android:drawable/ic_menu_info_details"/>
+    <item android:id="@+id/nav_price" android:title="Fiyat Al" android:icon="@android:drawable/ic_menu_compass"/>
+    <item android:id="@+id/nav_rental" android:title="Kiralama" android:icon="@android:drawable/ic_menu_myplaces"/>
+    <item android:id="@+id/nav_contact" android:title="İletişim" android:icon="@android:drawable/ic_menu_call"/>
+    <item android:id="@+id/nav_logout" android:title="Çıkış Yap" android:icon="@android:drawable/ic_lock_power_off"/>
+</menu>

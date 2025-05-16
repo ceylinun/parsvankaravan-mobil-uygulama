@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Mavi -->
+    <color name="my_primary">#1976D2</color>
+    <color name="my_primary_container">#BBDEFB</color>
+    <color name="my_on_primary">#FFFFFF</color>
+
+    <!-- Turuncu -->
+    <color name="my_secondary">#FFA000</color>
+    <color name="my_secondary_container">#FFE0B2</color>
+    <color name="my_on_secondary">#000000</color>
+
+    <!-- Arka Plan ve Yazılar -->
+    <color name="my_background">#FAFAFA</color>
+    <color name="my_on_background">#000000</color>
+    <color name="my_surface">#FFFFFF</color>
+    <color name="my_on_surface">#000000</color>
+</resources>
